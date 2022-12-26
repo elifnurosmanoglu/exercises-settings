@@ -1,0 +1,129 @@
+body {
+    background-color: #E9E9FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-settings {
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: black;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    
+    font-size: 20px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle label {
+    display: block;
+    width: 55px;
+    height: 35px;
+    background-color: #E9E9FB;
+    border-radius: 30px;
+    border: 0 solid;
+    position: relative;
+    transition: all .4s ease;
+
+}
+
+.toggle label:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all .4s ease;
+
+}
+
+.toggle input:checked+label {
+    background-color: #E9E9FB;
+    transition: all .4s ease;
+}
+
+.toggle input:checked+label:before {
+    background-color: #000;
+    left: 30px;
+    transition: all .4s ease-in-out;
+}
+
+.radio-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.radio-btn .radio {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn input {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.radio-btn input::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.radio-btn input:checked::after {
+    background-color: #fff;
+
+}
+
+.radio-btn input:checked::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: #000;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    left: 4px;
+    top: 4px;
+}
+
+a {
+    color: black;
+}
